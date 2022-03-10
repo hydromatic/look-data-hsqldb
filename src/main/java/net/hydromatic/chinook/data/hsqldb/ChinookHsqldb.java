@@ -20,9 +20,9 @@ package net.hydromatic.chinook.data.hsqldb;
 public class ChinookHsqldb {
   /** URI of the hsqldb database. */
   public static final String URI = "jdbc:hsqldb:res:chinook";
-  public static final String USER = "sa";
-  public static final String PASSWORD = "";
-  public static final String SCHEMA = "PUBLIC";
+  public static final String USER = "CHINOOK";
+  public static final String PASSWORD = "CHINOOK";
+  public static final String SCHEMA = "chinook";
 }
 
 // End ChinookHsqldb.java
