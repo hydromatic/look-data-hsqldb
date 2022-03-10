@@ -66,7 +66,7 @@ add the artifact to your project's dependencies:
 <dependency>
   <groupId>net.hydromatic</groupId>
   <artifactId>chinook-data-hsqldb</artifactId>
-  <version>0.1</version>
+  <version>0.2</version>
 </dependency>
 ```
 
@@ -78,7 +78,7 @@ import java.sql.Statement;
 import java.sql.ResultSet;
 
 final String url = "jdbc:hsqldb:res:chinook";
-final String sql = "select EmployeeId, LastName from Employee";
+final String sql = "select \"EmployeeId\", \"LastName\" from \"Employee\"";
 try (Connection c = DriverManager.getConnection(url, "sa", "");
     Statement s = c.createStatement();
     ResultSet r = s.executeQuery(sql)) {
@@ -93,9 +93,26 @@ Make sure that `chinook-data-hsqldb.jar` is on the class path, and start `sqllin
 
 ```sql
 $ ./sqlline
-sqlline version 1.3.0
+sqlline version 1.12.0
 sqlline> !connect jdbc:hsqldb:res:chinook sa ""
-0: jdbc:hsqldb:res:chinook> select count(*) from Track;
+0: jdbc:hsqldb:res:chinook> select count(*) from "chinook"."Track";
++----------------------+
+|          C1          |
++----------------------+
+| 3503                 |
++----------------------+
+1 row selected (0.004 seconds)
+0: jdbc:hsqldb:res:chinook> !quit
+```
+
+If you use username and password "CHINOOK" and "CHINOOK", the default
+schema is "chinook", so you can omit the table prefix, if you wish:
+
+```sql
+$ ./sqlline
+sqlline version 1.12.0
+sqlline> !connect jdbc:hsqldb:res:chinook CHINOOK CHINOOK
+0: jdbc:hsqldb:res:chinook> select count(*) from "Track";
 +----------------------+
 |          C1          |
 +----------------------+
@@ -116,7 +133,7 @@ Get chinook-data-hsqldb from
 <dependency>
   <groupId>net.hydromatic</groupId>
   <artifactId>chinook-data-hsqldb</artifactId>
-  <version>0.1</version>
+  <version>0.2</version>
 </dependency>
 ```
 
