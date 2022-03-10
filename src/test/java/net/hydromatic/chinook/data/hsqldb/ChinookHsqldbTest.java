@@ -38,8 +38,8 @@ public class ChinookHsqldbTest {
         DriverManager.getConnection(ChinookHsqldb.URI, ChinookHsqldb.USER,
             ChinookHsqldb.PASSWORD);
     final Statement statement = connection.createStatement();
-    foo(statement.executeQuery("select * from Album"), 1, is(347));
-    foo(statement.executeQuery("select * from Track"), 2, is(3_503));
+    foo(statement.executeQuery("select * from \"Album\""), 1, is(347));
+    foo(statement.executeQuery("select * from \"Track\""), 2, is(3_503));
     statement.close();
     connection.close();
   }
