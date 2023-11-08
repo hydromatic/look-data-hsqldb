@@ -19,6 +19,7 @@ License.
 {% endcomment %}
 -->
 [![Build Status](https://github.com/julianhyde/chinook-data-hsqldb/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/julianhyde/chinook-data-hsqldb/actions?query=branch%3Amain)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.hydromatic/chinook-data-hsqldb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.hydromatic/chinook-data-hsqldb)
 
 # chinook-data-hsqldb
 Chinook data set in hsqldb format
