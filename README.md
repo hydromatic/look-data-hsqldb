@@ -52,10 +52,6 @@ Chinook's schema consists of 11 tables:
 
 Its size is about 900 KB uncompressed, 160 KB compressed.
 
-Here is a schema diagram:
-
-![Chinook schema diagram](schema.png)
-
 # Using the data set
 
 The data set is packaged as a jar file that is published to
