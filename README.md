@@ -22,33 +22,24 @@ License.
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.hydromatic/look-data-hsqldb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.hydromatic/look-data-hsqldb)
 
 # look-data-hsqldb
-Look data set in hsqldb format
+'The Look' data set for hsqldb
 
-This project contains the Look data set as an embedded
+This project contains the 'The Look' data set as an embedded
 HSQLDB database.
 
-It originated as the
-[Look database](https://github.com/lerocha/look-database)
-version 1.4, which itself is an alternative to the
-[Northwind database](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases).
+It originated as an internal test data set for the Looker business
+intelligence (BI) tool, modeling a fictitious fashion business.
 
 # Schema
 
-Look's schema consists of 11 tables:
+The Look's schema consists of 4 tables:
 
-| Table         | Row count |
-| :------------ | --------: |
-| Album         | 347       |
-| Artist        | 275       |
-| Customer      | 59        |
-| Employee      | 8         |
-| Genre         | 25        |
-| Invoice       | 412       |
-| InvoiceLine   | 2,240     |
-| MediaType     | 5         |
-| Playlist      | 18        |
-| PlaylistTrack | 8,715     |
-| Track         | 3,503     |
+| Table               | Row count |
+| :------------------ | --------: |
+| nested_and_repeated | 2         |
+| orders              | 59        |
+| order_items         | 8         |
+| users               | 275       |
 
 Its size is about 900 KB uncompressed, 160 KB compressed.
 
@@ -63,7 +54,7 @@ add the artifact to your project's dependencies:
 <dependency>
   <groupId>net.hydromatic</groupId>
   <artifactId>look-data-hsqldb</artifactId>
-  <version>0.2</version>
+  <version>0.1</version>
 </dependency>
 ```
 
@@ -76,7 +67,7 @@ import java.sql.ResultSet;
 
 final String url = "jdbc:hsqldb:res:look";
 final String sql = "select \"EmployeeId\", \"LastName\" from \"Employee\"";
-try (Connection c = DriverManager.getConnection(url, "sa", "");
+try (Connection c = DriverManager.getConnection(url, "look", "look");
     Statement s = c.createStatement();
     ResultSet r = s.executeQuery(sql)) {
   while (r.next()) {
@@ -153,6 +144,7 @@ On Windows, the last line is
 ## See also
 
 Similar data sets:
+* [chinook-data-hsqldb](https://github.com/julianhyde/chinook-data-hsqldb)
 * [flight-data-hsqldb](https://github.com/julianhyde/flight-data-hsqldb)
 * [foodmart-data-hsqldb](https://github.com/julianhyde/foodmart-data-hsqldb)
 * [scott-data-hsqldb](https://github.com/julianhyde/scott-data-hsqldb)

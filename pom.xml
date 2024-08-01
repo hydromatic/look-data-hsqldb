@@ -25,13 +25,13 @@ limitations under the License.
   </parent>
 
   <artifactId>look-data-hsqldb</artifactId>
-  <version>0.3-SNAPSHOT</version>
+  <version>0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>look-data-hsqldb</name>
   <description>Look data set in hsqldb format</description>
   <url>http://github.com/julianhyde/look-data-hsqldb</url>
-  <inceptionYear>2018</inceptionYear>
+  <inceptionYear>2024</inceptionYear>
   <organization>
     <name>Julian Hyde</name>
     <url>http://www.hydromatic.net</url>

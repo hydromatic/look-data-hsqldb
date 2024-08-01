@@ -1,6 +1,7 @@
-look-data-hsqldb release 0.2
+look-data-hsqldb release 0.1
 
-This is a source or binary distribution of look-data-hsqldb.
+This is a source or binary distribution of look-data-hsqldb,
+'The Look' data set for hsqldb.
 
 Changes since the previous release are described in the
 HISTORY.md file.
