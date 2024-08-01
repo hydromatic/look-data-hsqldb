@@ -1,11 +1,8 @@
 look-data-hsqldb
-Look data set in hsqldb format
+'The Look' data set for hsqldb
 
-Copyright (C) 2018-2022 Julian Hyde
+Copyright (C) 2024-2024 Julian Hyde
 All Rights Reserved.
-
-Based upon the Look data set,
-https://github.com/lerocha/look-database
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this software except in compliance with the License.
