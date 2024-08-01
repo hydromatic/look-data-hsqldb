@@ -14,7 +14,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.hydromatic.chinook.data.hsqldb;
+package net.hydromatic.look.data.hsqldb;
 
 import org.hamcrest.Matcher;
 import org.junit.Test;
@@ -32,11 +32,11 @@ import static org.hamcrest.core.Is.is;
 /**
  * Kick the tires.
  */
-public class ChinookHsqldbTest {
+public class LookHsqldbTest {
   @Test public void test() throws SQLException {
     final Connection connection =
-        DriverManager.getConnection(ChinookHsqldb.URI, ChinookHsqldb.USER,
-            ChinookHsqldb.PASSWORD);
+        DriverManager.getConnection(LookHsqldb.URI, LookHsqldb.USER,
+            LookHsqldb.PASSWORD);
     final Statement statement = connection.createStatement();
     foo(statement.executeQuery("select * from \"Album\""), 1, is(347));
     foo(statement.executeQuery("select * from \"Track\""), 2, is(3_503));
@@ -67,4 +67,4 @@ public class ChinookHsqldbTest {
   }
 }
 
-// End ChinookHsqldbTest.java
+// End LookHsqldbTest.java

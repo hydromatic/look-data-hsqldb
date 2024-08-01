@@ -14,15 +14,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package net.hydromatic.chinook.data.hsqldb;
+package net.hydromatic.look.data.hsqldb;
 
-/** Chinook data set in hsqldb format. */
-public class ChinookHsqldb {
+/** Look data set in hsqldb format. */
+public class LookHsqldb {
   /** URI of the hsqldb database. */
-  public static final String URI = "jdbc:hsqldb:res:chinook";
-  public static final String USER = "CHINOOK";
-  public static final String PASSWORD = "CHINOOK";
-  public static final String SCHEMA = "chinook";
+  public static final String URI = "jdbc:hsqldb:res:look";
+  public static final String USER = "LOOK";
+  public static final String PASSWORD = "LOOK";
+  public static final String SCHEMA = "look";
 }
 
-// End ChinookHsqldb.java
+// End LookHsqldb.java

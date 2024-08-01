@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-/** Contains the "Chinook" data set in hsqldb format.
+/** Contains the "Look" data set in hsqldb format.
  *
  * <p>Tables:
  * <ul>
@@ -32,6 +32,6 @@
  * <li>Track
  * </ul>
  */
-package net.hydromatic.chinook.data.hsqldb;
+package net.hydromatic.look.data.hsqldb;
 
 // End package-info.java

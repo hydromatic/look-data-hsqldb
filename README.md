@@ -18,23 +18,23 @@ language governing permissions and limitations under the
 License.
 {% endcomment %}
 -->
-[![Build Status](https://github.com/julianhyde/chinook-data-hsqldb/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/julianhyde/chinook-data-hsqldb/actions?query=branch%3Amain)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.hydromatic/chinook-data-hsqldb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.hydromatic/chinook-data-hsqldb)
+[![Build Status](https://github.com/julianhyde/look-data-hsqldb/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/julianhyde/look-data-hsqldb/actions?query=branch%3Amain)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.hydromatic/look-data-hsqldb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.hydromatic/look-data-hsqldb)
 
-# chinook-data-hsqldb
-Chinook data set in hsqldb format
+# look-data-hsqldb
+Look data set in hsqldb format
 
-This project contains the Chinook data set as an embedded
+This project contains the Look data set as an embedded
 HSQLDB database.
 
 It originated as the
-[Chinook database](https://github.com/lerocha/chinook-database)
+[Look database](https://github.com/lerocha/look-database)
 version 1.4, which itself is an alternative to the
 [Northwind database](https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/sql/linq/downloading-sample-databases).
 
 # Schema
 
-Chinook's schema consists of 11 tables:
+Look's schema consists of 11 tables:
 
 | Table         | Row count |
 | :------------ | --------: |
@@ -55,14 +55,14 @@ Its size is about 900 KB uncompressed, 160 KB compressed.
 # Using the data set
 
 The data set is packaged as a jar file that is published to
-[Maven Central](https://search.maven.org/#search%7Cga%7C1%7Ca%3Achinook-data-hsqldb)
+[Maven Central](https://search.maven.org/#search%7Cga%7C1%7Ca%3Alook-data-hsqldb)
 as a Maven artifact. To use the data in your Java application,
 add the artifact to your project's dependencies:
 
 ```xml
 <dependency>
   <groupId>net.hydromatic</groupId>
-  <artifactId>chinook-data-hsqldb</artifactId>
+  <artifactId>look-data-hsqldb</artifactId>
   <version>0.2</version>
 </dependency>
 ```
@@ -74,7 +74,7 @@ import java.sql.Connection;
 import java.sql.Statement;
 import java.sql.ResultSet;
 
-final String url = "jdbc:hsqldb:res:chinook";
+final String url = "jdbc:hsqldb:res:look";
 final String sql = "select \"EmployeeId\", \"LastName\" from \"Employee\"";
 try (Connection c = DriverManager.getConnection(url, "sa", "");
     Statement s = c.createStatement();
@@ -86,50 +86,50 @@ try (Connection c = DriverManager.getConnection(url, "sa", "");
 ```
 
 You can also connect using a JDBC interface such as [sqlline](https://github.com/julianhyde/sqlline).
-Make sure that `chinook-data-hsqldb.jar` is on the class path, and start `sqlline`:
+Make sure that `look-data-hsqldb.jar` is on the class path, and start `sqlline`:
 
 ```sql
 $ ./sqlline
 sqlline version 1.12.0
-sqlline> !connect jdbc:hsqldb:res:chinook sa ""
-0: jdbc:hsqldb:res:chinook> select count(*) from "chinook"."Track";
+sqlline> !connect jdbc:hsqldb:res:look sa ""
+0: jdbc:hsqldb:res:look> select count(*) from "look"."Track";
 +----------------------+
 |          C1          |
 +----------------------+
 | 3503                 |
 +----------------------+
 1 row selected (0.004 seconds)
-0: jdbc:hsqldb:res:chinook> !quit
+0: jdbc:hsqldb:res:look> !quit
 ```
 
-If you use username and password "CHINOOK" and "CHINOOK", the default
-schema is "chinook", so you can omit the table prefix, if you wish:
+If you use username and password "LOOK" and "LOOK", the default
+schema is "look", so you can omit the table prefix, if you wish:
 
 ```sql
 $ ./sqlline
 sqlline version 1.12.0
-sqlline> !connect jdbc:hsqldb:res:chinook CHINOOK CHINOOK
-0: jdbc:hsqldb:res:chinook> select count(*) from "Track";
+sqlline> !connect jdbc:hsqldb:res:look LOOK LOOK
+0: jdbc:hsqldb:res:look> select count(*) from "Track";
 +----------------------+
 |          C1          |
 +----------------------+
 | 3503                 |
 +----------------------+
 1 row selected (0.004 seconds)
-0: jdbc:hsqldb:res:chinook> !quit
+0: jdbc:hsqldb:res:look> !quit
 ```
 
-## Get chinook-data-hsqldb
+## Get look-data-hsqldb
 
 ### From Maven
 
-Get chinook-data-hsqldb from
-<a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3Anet.hydromatic%20a%3Achinook-data-hsqldb">Maven Central</a>:
+Get look-data-hsqldb from
+<a href="https://search.maven.org/#search%7Cga%7C1%7Cg%3Anet.hydromatic%20a%3Alook-data-hsqldb">Maven Central</a>:
 
 ```xml
 <dependency>
   <groupId>net.hydromatic</groupId>
-  <artifactId>chinook-data-hsqldb</artifactId>
+  <artifactId>look-data-hsqldb</artifactId>
   <version>0.2</version>
 </dependency>
 ```
@@ -139,8 +139,8 @@ Get chinook-data-hsqldb from
 Java version 8 or higher.
 
 ```bash
-$ git clone git://github.com/julianhyde/chinook-data-hsqldb.git
-$ cd chinook-data-hsqldb
+$ git clone git://github.com/julianhyde/look-data-hsqldb.git
+$ cd look-data-hsqldb
 $ ./mvnw install
 ```
 
@@ -163,12 +163,12 @@ Similar data sets:
 * License: Apache License, Version 2.0
 * Author: Julian Hyde
 * Blog: http://blog.hydromatic.net
-* Project page: http://www.hydromatic.net/chinook-data-hsqldb
-* Source code: https://github.com/julianhyde/chinook-data-hsqldb
-* Distribution: <a href="https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22chinook-data-hsqldb%22">Maven Central</a>
+* Project page: http://www.hydromatic.net/look-data-hsqldb
+* Source code: https://github.com/julianhyde/look-data-hsqldb
+* Distribution: <a href="https://search.maven.org/#search%7Cga%7C1%7Ca%3A%22look-data-hsqldb%22">Maven Central</a>
 * Developers list:
   <a href="mailto:dev@calcite.apache.org">dev at calcite.apache.org</a>
   (<a href="https://mail-archives.apache.org/mod_mbox/calcite-dev/">archive</a>,
   <a href="mailto:dev-subscribe@calcite.apache.org">subscribe</a>)
-* Issues: https://github.com/julianhyde/chinook-data-hsqldb/issues
+* Issues: https://github.com/julianhyde/look-data-hsqldb/issues
 * <a href="HISTORY.md">Release notes and history</a>

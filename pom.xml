@@ -24,13 +24,13 @@ limitations under the License.
     <version>0.1</version>
   </parent>
 
-  <artifactId>chinook-data-hsqldb</artifactId>
+  <artifactId>look-data-hsqldb</artifactId>
   <version>0.3-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>chinook-data-hsqldb</name>
-  <description>Chinook data set in hsqldb format</description>
-  <url>http://github.com/julianhyde/chinook-data-hsqldb</url>
+  <name>look-data-hsqldb</name>
+  <description>Look data set in hsqldb format</description>
+  <url>http://github.com/julianhyde/look-data-hsqldb</url>
   <inceptionYear>2018</inceptionYear>
   <organization>
     <name>Julian Hyde</name>
@@ -81,21 +81,21 @@ limitations under the License.
   <!-- Environment settings. -->
   <distributionManagement>
     <site>
-      <id>chinook-data-hsqldb.website</id>
-      <name>Chinook data for hsqldb Website</name>
-      <url>file:/home/jhyde/web2/chinook-data-hsqldb</url>
+      <id>look-data-hsqldb.website</id>
+      <name>Look data for hsqldb Website</name>
+      <url>file:/home/jhyde/web2/look-data-hsqldb</url>
     </site>
   </distributionManagement>
 
   <issueManagement>
     <system>github</system>
-    <url>https://github.com/julianhyde/chinook-data-hsqldb/issues</url>
+    <url>https://github.com/julianhyde/look-data-hsqldb/issues</url>
   </issueManagement>
 
   <scm>
-    <connection>scm:git:git://github.com/julianhyde/chinook-data-hsqldb.git</connection>
-    <developerConnection>scm:git:git@github.com:julianhyde/chinook-data-hsqldb.git</developerConnection>
-    <url>scm:git:git://github.com/julianhyde/chinook-data-hsqldb.git</url>
+    <connection>scm:git:git://github.com/julianhyde/look-data-hsqldb.git</connection>
+    <developerConnection>scm:git:git@github.com:julianhyde/look-data-hsqldb.git</developerConnection>
+    <url>scm:git:git://github.com/julianhyde/look-data-hsqldb.git</url>
     <tag>HEAD</tag>
   </scm>
 

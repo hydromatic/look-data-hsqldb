@@ -1,11 +1,11 @@
-chinook-data-hsqldb
-Chinook data set in hsqldb format
+look-data-hsqldb
+Look data set in hsqldb format
 
 Copyright (C) 2018-2022 Julian Hyde
 All Rights Reserved.
 
-Based upon the Chinook data set,
-https://github.com/lerocha/chinook-database
+Based upon the Look data set,
+https://github.com/lerocha/look-database
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this software except in compliance with the License.

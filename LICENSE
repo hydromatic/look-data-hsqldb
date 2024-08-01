@@ -205,11 +205,11 @@
  The MIT License
 -----------------------------------------------------------------------
 
-The chinook-data-hsqldb bundles the following files under the MIT License:
+The look-data-hsqldb bundles the following files under the MIT License:
 
-- chinook.script, schema.png
-    The data set (from which chinook.script is derived) and schema diagram
-    from Chinook Database (https://github.com/lerocha/chinook-database)
+- look.script, schema.png
+    The data set (from which look.script is derived) and schema diagram
+    from Look Database (https://github.com/lerocha/look-database)
     Copyright (c) 2008-2017 Luis Rocha
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
