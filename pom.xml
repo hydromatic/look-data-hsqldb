@@ -96,7 +96,7 @@ limitations under the License.
     <connection>scm:git:git://github.com/hydromatic/look-data-hsqldb.git</connection>
     <developerConnection>scm:git:git@github.com:hydromatic/look-data-hsqldb.git</developerConnection>
     <url>scm:git:git://github.com/hydromatic/look-data-hsqldb.git</url>
-    <tag>HEAD</tag>
+    <tag>look-data-hsqldb-0.1.0</tag>
   </scm>
 
   <prerequisites>
