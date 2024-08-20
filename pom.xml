@@ -25,7 +25,7 @@ limitations under the License.
   </parent>
 
   <artifactId>look-data-hsqldb</artifactId>
-  <version>0.1</version>
+  <version>0.2-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>look-data-hsqldb</name>
@@ -96,7 +96,7 @@ limitations under the License.
     <connection>scm:git:git://github.com/hydromatic/look-data-hsqldb.git</connection>
     <developerConnection>scm:git:git@github.com:hydromatic/look-data-hsqldb.git</developerConnection>
     <url>scm:git:git://github.com/hydromatic/look-data-hsqldb.git</url>
-    <tag>look-data-hsqldb-0.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <prerequisites>
