@@ -20,6 +20,7 @@ License.
 -->
 [![Build Status](https://github.com/hydromatic/look-data-hsqldb/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/hydromatic/look-data-hsqldb/actions?query=branch%3Amain)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/net.hydromatic/look-data-hsqldb/badge.svg)](https://maven-badges.herokuapp.com/maven-central/net.hydromatic/look-data-hsqldb)
+[![javadoc](https://javadoc.io/badge2/net.hydromatic/look-data-hsqldb/javadoc.svg)](https://javadoc.io/doc/net.hydromatic/look-data-hsqldb)
 
 # look-data-hsqldb
 'The Look' data set in hsqldb format
